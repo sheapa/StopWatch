@@ -1,0 +1,15 @@
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\bin\Debug\net6.0\StopWatchExercise.exe
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\bin\Debug\net6.0\StopWatchExercise.deps.json
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\bin\Debug\net6.0\StopWatchExercise.runtimeconfig.json
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\bin\Debug\net6.0\StopWatchExercise.dll
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\bin\Debug\net6.0\ref\StopWatchExercise.dll
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\bin\Debug\net6.0\StopWatchExercise.pdb
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.csproj.AssemblyReference.cache
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.AssemblyInfoInputs.cache
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.AssemblyInfo.cs
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.csproj.CoreCompileInputs.cache
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.dll
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\ref\StopWatchExercise.dll
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.pdb
+C:\Users\patri\source\repos\StopWatchExercise\StopWatchExercise\obj\Debug\net6.0\StopWatchExercise.genruntimeconfig.cache
