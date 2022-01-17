@@ -9,22 +9,12 @@ using Microsoft.VisualBasic;
 namespace StopWatchExercise
 { class StopWatch
     {
-        private DateTime now;
         private DateTime _startTimeSpan;
+        private DateTime _stopTimeSpan;
         private bool _startTimer;
         private string _command;
 
-        public DateTime Now
-        {
-            get { return this.now; }
-        }
-
-        public DateTime StartTimeSpan
-        {
-            get { return this._startTimeSpan; }
-            set { this._startTimeSpan = value; }
-        }
-
+       
         public string Command
             {
              get
@@ -33,12 +23,12 @@ namespace StopWatchExercise
              }
              set
              {
-             if ( value == "start" || value == "START" || value == "Start")
+             if ( value == "start")
              {
                 this._command = value;
 
              }
-             else if ( value == "stop" || value == "STOP" || value == "Stop")
+             else if ( value == "stop")
              { 
                 this._command = value;
              }
@@ -49,73 +39,62 @@ namespace StopWatchExercise
 
              }
         }
-        public bool StartTimer
-        {
-            get { return this._startTimer; }
-            set
-            {
-                if (StartTimer == true)
-                {
-                    Console.WriteLine("Please stop the timer before starting again.");
-                }
-                else
-                {
-                    StartTimer = value;
-                }
-            }
-        }
-
+        
+    
         public StopWatch()
         {
-            this.now = DateTime.Now;
-            this._startTimeSpan = DateTime.Now;
-            this._startTimer = false;
-            this._command = null;
+            _stopTimeSpan = DateTime.Now;
+            _startTimeSpan = DateTime.Now;
+            _startTimer = false;
+            _command = Command;
 
         }
 
-        public bool stateChecker()
+        public Boolean InitiateTimer()
         {
-            var incomming = Command.ToLower();
-            if (incomming == "start")
+            if (Command == "start")
             {
-                StartTimer = true;
+                _startTimer = true;
                 Start();
             }
-            else if (incomming == "stop")
+            else if (Command == "stop")
             {
                 Stop();
-                StartTimer = false;
+                _startTimer = false;
             }
-            return stateChecker();
+            return _startTimer;
         }
         public DateTime Start()
         {
-            if (StartTimer == true)
+            if (_startTimer == true)
             {
-                var StartTimeSpan = Now;
+                _startTimeSpan = DateTime.Now;
+                Console.WriteLine(_startTimeSpan);
             }
             else
             {
                Console.WriteLine("start error");
             }
 
-            return StartTimeSpan;
+            return _startTimeSpan;
         }
 
-        public string Stop()
+        public TimeSpan Stop()
         {
-            TimeSpan timeElapsed = Now - StartTimeSpan;
+           _stopTimeSpan = DateTime.Now;
+          
+            TimeSpan timeElapsed = _stopTimeSpan - _startTimeSpan;
 
-            var hours = timeElapsed.Hours.ToString("00") + ":" ;
+
+            var hours = timeElapsed.Hours.ToString("00") + ":";
             var minutes = timeElapsed.Minutes.ToString("00") + ":";
             var seconds = timeElapsed.Seconds.ToString("00") + ".";
             int tenths = timeElapsed.Milliseconds / 100;
             tenths.ToString("0");
 
-            string interval = hours + minutes + seconds + tenths;
+            Console.WriteLine("Time Elapsed (hours/minutes/seconds/milliseconds): " + hours + minutes + seconds + tenths );
 
-            return interval;
+            return timeElapsed;
 
          }
         
